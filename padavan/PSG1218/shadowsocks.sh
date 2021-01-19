@@ -8,8 +8,8 @@
 # This is free software, licensed under the GNU General Public License v3.	# This is free software, licensed under the GNU General Public License v3.
 # See /LICENSE for more information.	# See /LICENSE for more information.
 #	#
-tj_bin_url="https://cdn.jsdelivr.net/gh/vb1980/Padavan-build/ssp/trojan" # tj_bin下载路径
-v2_bin_url="https://cdn.jsdelivr.net/gh/vb1980/Padavan-build/ssp/v2ray"  # v2 下载链接
+tj_bin_url="https://cdn.jsdelivr.net/gh/vb1980/Padavan_CI@main/ssp/trojan" # tj_bin下载路径
+v2_bin_url="https://cdn.jsdelivr.net/gh/vb1980/Padavan_CI@main/ssp/v2ray"  # v2 下载链接
 NAME=shadowsocksr	NAME=shadowsocksr
 http_username=`nvram get http_username`	http_username=`nvram get http_username`
 CONFIG_FILE=/tmp/${NAME}.json	CONFIG_FILE=/tmp/${NAME}.json
