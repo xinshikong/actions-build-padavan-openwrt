@@ -35,6 +35,7 @@ jobs:
     - name: Initialization Environment # 2.初始环境的设置
       env:
         DEBIAN_FRONTEND: noninteractive  # 非交互模式
+        ACTIONS_ALLOW_UNSECURE_COMMANDS: true
       run: |
         sudo apt-get clean
         cd /var/lib/apt
