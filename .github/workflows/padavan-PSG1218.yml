@@ -14,8 +14,9 @@ on:
     paths:                            # 路径
       - logs/k2.md                    # 监听logs目录下 k2.md 的push操作
   # watch:                              # 监视操作
-  #   types: [started]                  # 点击 star 之后
+     types: [started]                  # 点击 star 之后
 env:
+  ACTIONS_ALLOW_UNSECURE_COMMANDS: true
   T_NAMES: "PSG1218"        # 设备名字数组
   BASE_PATH: padavan                # 基础目录
   PUBLIC_PATH: public               # 公共目录
@@ -35,7 +36,6 @@ jobs:
     - name: Initialization Environment # 2.初始环境的设置
       env:
         DEBIAN_FRONTEND: noninteractive  # 非交互模式
-        ACTIONS_ALLOW_UNSECURE_COMMANDS: true
       run: |
         sudo apt-get clean
         cd /var/lib/apt
